@@ -3,6 +3,6 @@ Nexmo::Application.routes.draw do
 
   resources :sms
 
-  get '/sms/callback', to: "sms#callback"
+  post '/sms/callback', to: "sms#callback"
 
 end

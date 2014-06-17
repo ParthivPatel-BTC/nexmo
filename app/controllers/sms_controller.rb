@@ -13,6 +13,8 @@ class SmsController < ApplicationController
     else
       puts "===================not sent"
     end
+
+    redirect_to  new_sm_path
   end
 
   def callback

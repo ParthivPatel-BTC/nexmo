@@ -21,7 +21,6 @@ class SmsController < ApplicationController
   end
 
   def callback
-    puts "========================> Called back"
-    puts "#{params}"
+    puts "==========================#{params.inspect}"
   end
 end

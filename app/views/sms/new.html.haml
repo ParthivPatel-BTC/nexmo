@@ -1,0 +1,5 @@
+= form_tag(sms_path, method: 'post', class: 'form-horizontal', id: 'clientFormCaseMgrs', multipart: true) do
+  = render partial: 'shared/error_messages', locals: { target: @sms }
+  %label Phone Number
+  = text_field_tag 'sms[phone_number]', nil
+  = submit_tag 'Sumbit'
